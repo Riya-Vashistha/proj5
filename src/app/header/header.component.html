@@ -1,0 +1,25 @@
+<!-- <header>
+    <div class="nav text-allign-center">
+        <img src="assets/images/appLogo.jpg" alt="LOGO" height="35">
+        <h1 class="headerTitle">Online Shopping App</h1>
+    </div>
+  </header> -->
+
+
+  <header>
+    <nav class="nav text-allign-center navbar navbar-expand-md navbar-dark bgcolor">
+            <div><a href="" class="headerTitle">Online Shopping App</a></div>
+            <ul class="navbar-nav">
+                    <li><a *ngIf="!authenticationService.isUserLoggedIn()" routerLink="login"
+                                    class="nav-link">Login</a>
+                    </li>
+                    
+            </ul>
+
+            <ul class="navbar-nav navbar-collapse justify-content-end">
+                    <li><a *ngIf="authenticationService.isUserLoggedIn()" routerLink="logout"
+                                    class="nav-link">Logout</a></li>
+            </ul>
+    </nav>
+
+</header>

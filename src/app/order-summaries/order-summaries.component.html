@@ -1,0 +1,30 @@
+
+    <!-- <header>
+        <div class="nav text-allign-center">
+            <img src="assets/images/appLogo.jpg" alt="LOGO" height="90%">
+            <h1 class="headerTitle">Online Shopping App</h1>
+        </div>
+      </header>
+       -->
+     
+
+<div class="col-sm-8">
+    <div class="order-summaries">
+      <h5 class="order-head">Order Summaries</h5>
+      <table class="table" cellspacing="0" style="max-height: 28px;">
+          <thead>
+              <tr>
+                  <th>Order Id</th>
+                  <th>Order Description</th>
+              </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let summaries of orderSummaries;">
+            <td (click)="clickid(summaries.id)">{{ summaries.id }}</td>
+            <td>{{ summaries.order_desc }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
